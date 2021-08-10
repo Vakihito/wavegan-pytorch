@@ -7,7 +7,7 @@ import os
 #############################
 # DataSet Path
 #############################s
-target_signals_dir = '../../DataSet/mancini_piano/piano'
+target_signals_dir = './piano'
 #############################
 # Model Params
 #############################
@@ -24,7 +24,7 @@ n_critic = 1 # update generator every n_critic steps if lr_g = lr_d the n_critic
 # gradient penalty regularization factor.
 validate=False
 p_coeff = 10
-batch_size = 10
+batch_size = 256
 noise_latent_dim = 100  # size of the sampling noise
 model_capacity_size = 32    # model capacity during training can be reduced to 32 for larger window length of 2 seconds and 4 seconds
 # rate of storing validation and costs params
